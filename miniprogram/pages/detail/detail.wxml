@@ -1,0 +1,95 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail_image">
+  <image mode="aspectFit" src="{{good_detail.good_image}}" />
+</view>
+<view class = "detail_card_1">
+  <view class="detail_name_row">
+    <view class="detail_name">{{good_detail.good_name}}</view>
+  </view>
+  <view class="tool"> 
+    <view class="tool_but" bindtap="handleCollection" >加入收藏夹</view>
+  </view>
+  <view class="detail_price">￥{{good_detail.good_price}}/{{good_detail.unit}}</view>
+</view>
+<view class="detail_card_2">
+  <view class = "detail_text">——宝贝详情——</view>
+  <image mode="widthFix" src="{{good_detail.introduce}}"></image>
+</view>
+<view class="btm_tool">
+  <view class="tool_item">
+    <view>分享</view>
+    <button open-type="share"></button>
+  </view>
+  <view class="btm_cart" bindtap="showModal_cart">加入购物车</view>
+  <view class="btm_buy" bindtap="showModal_buy">立即购买</view>
+</view>
+<view class="commodity_screen" wx:if="{{showModalStatus_cart}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus_cart}}">
+  <image src="/icons/close.png" class="close_img" mode="aspectFit" bindtap="hideModal_cart"></image>
+   <view class='commImg'><image src='{{good_detail.good_image}}' mode="aspectFit"></image></view>
+   <view class='column'>
+      <text class="sku-price">￥{{good_detail.good_price}}/{{good_detail.unit}}</text>
+      <text class="sku-title"><block>已选择 {{standard}} 规格</block></text>
+   </view>
+   <text class="line"></text>
+   <view class='guige'>
+      <text class="gg-title">规格</text>
+      <view class='gg'>
+        <text class="active">正常</text>
+      </view>
+   </view>
+   <text class="line"></text>
+   <view class="row">
+        <text >数量</text>
+        <view class="quantity-position">
+           <view class="stepper">
+            <!-- 减号 -->  
+            <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+            <!-- 数值 -->  
+            <input type="number" bindinput='bindManual' value="{{num}}" />
+            <!-- 加号 -->  
+            <text class="normal" bindtap="bindPlus">+</text>
+            </view>
+        </view>
+   </view>
+   <text class="line"></text>
+   <view class='btn'>
+    <button class="button-add" bindtap="handleAddcart">加入购物车</button>
+   </view>
+</view>
+<!--屏幕背景变暗的背景  -->
+<view class="commodity_screen" wx:if="{{showModalStatus_buy}}"></view>
+ <!--弹出框  -->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus_buy}}">
+  <image src="/icons/close.png" class="close_img" mode="aspectFit" bindtap="hideModal_buy_img"></image>
+   <view class='commImg'><image src='{{good_detail.good_image}}' mode="aspectFit"></image></view>
+   <view class='column'>
+      <text class="sku-price">￥{{good_detail.good_price}}/{{good_detail.unit}}</text>
+      <text class="sku-title"><block>已选择 {{standard}} 规格</block></text>
+   </view>
+   <text class="line"></text>
+   <view class='guige'>
+      <text class="gg-title">规格</text>
+      <view class='gg'>
+        <text class="active">正常</text>
+      </view>
+   </view>
+   <text class="line"></text>
+   <view class="row">
+        <text >数量</text>
+        <view class="quantity-position">
+           <view class="stepper">
+            <!-- 减号 -->  
+            <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+            <!-- 数值 -->  
+            <input type="number" bindinput='bindManual' value="{{num}}" />
+            <!-- 加号 -->  
+            <text class="normal" bindtap="bindPlus">+</text>
+            </view>
+        </view>
+   </view>
+   <text class="line"></text>
+   <view class='btn'>
+    <button class="button-add" bindtap="hideModal_buy">立即购买</button>
+   </view>
+</view>

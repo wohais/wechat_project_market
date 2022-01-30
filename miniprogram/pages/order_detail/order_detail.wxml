@@ -1,0 +1,53 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view class="address_tab">
+  <image class="address_img" src="/icons/address.png" mode="widthFix"></image>
+  <view class="address_show">
+    <view class="user_name">{{user_address.userName}}</view>
+    <view class="user_telnumber">联系电话：{{user_address.telNumber}}</view>
+    <view class="user_address">地址：{{user_address.cityName}}{{user_address.countyName}}{{user_address.detailInfo}}</view>
+  </view>
+</view>
+<view class="goods_tab">
+  <view class="goods_item" wx:if="{{show_item}}" wx:for="{{good_detail}}" wx:key="_id">
+    <view class="goods_img_wrap">
+      <image mode="widthFix" src="{{item.good_image}}"></image>
+    </view>
+    <view class="goods_info_wrap">
+      <view class="goods_name">{{item.good_name}}</view>
+      <view class="goods_price">￥{{item.good_price}}/{{item.unit}}</view>
+      <view class="goods_num">数量：×{{item.good_num}}</view>
+    </view>
+    <text class="line"></text>
+  </view>
+  <view class="goods_item" wx:if="{{!show_item}}">
+    <view class="goods_img_wrap">
+      <image mode="widthFix" src="{{good_detail.good_image}}"></image>
+    </view>
+    <view class="goods_info_wrap">
+      <view class="goods_name">{{good_detail.good_name}}</view>
+      <view class="goods_price">￥{{good_detail.good_price}}/{{good_detail.unit}}</view>
+      <view class="goods_num">数量：×{{good_detail.good_num}}</view>
+    </view>
+    <text class="line"></text>
+  </view>
+  <text class="line_2"></text>
+  <view class="conts">
+    <view wx:if="{{order_detail.order_areas}}" class="talk">备注留言：{{order_detail.order_areas}}</view>
+    <view wx:else class="talk">备注留言：无</view>
+  </view>
+</view>
+<view class="order_pay">
+  <view class="goods_pay">商品总价：￥{{order_detail.order_sum}}</view>
+  <view class="goods_freight">配送费用：￥{{freight}}</view>
+  <view class="total_num">
+    <view class="num">共 {{order_detail.order_num}} 件</view>
+    <view class="money">小计：￥{{order_detail.order_sum}}</view>
+  </view>
+  <view class="order_status">订单状态：
+    <view wx:if="{{order_detail.status==0}}" class="status_txt">正在拣货</view>
+    <view wx:elif="{{order_detail.status==1}}" class="status_txt">正在配送</view>
+    <view wx:elif="{{order_detail.status==2}}" class="status_txt">订单完成</view>
+    <view wx:else class="status_txt">状态异常（请联系开发者）</view>
+  </view>
+</view>
+

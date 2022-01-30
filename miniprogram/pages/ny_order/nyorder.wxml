@@ -1,0 +1,15 @@
+<!--pages/ny_order/nyorder.wxml-->
+<view class="order_content">
+  <view class="order_title">全部订单</view>
+</view>
+<navigator wx:for="{{ny_orderlist}}" wx:key="order_time" class="order_tab" url="/pages/order_detail/order_detail?order_id={{item._id}}">
+  <view class="order_id">订单编号：{{item._id}}</view>
+  <view class="order_sum">实付金额：￥{{item.order_sum}}</view>
+  <view class="order_time">下单时间：{{item.order_time}}</view>
+  <view class="order_status">订单状态：
+    <view wx:if="{{item.status==0}}" class="status_txt">正在拣货</view>
+    <view wx:elif="{{item.status==1}}" class="status_txt">正在配送</view>
+    <view wx:elif="{{item.status==2}}" class="status_txt">订单完成</view>
+    <view wx:else class="status_txt">状态异常（请联系开发者）</view>
+  </view>
+</navigator>

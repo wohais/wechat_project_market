@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/collection/collection",
+    "pages/pay_money/pay_money",
+    "pages/pay_money_b/pay_money_b",
+    "pages/all_order/all_order",
+    "pages/ny_order/nyorder",
+    "pages/sending_order/sending_order",
+    "pages/order_detail/order_detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "HOMEMADE商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/index_before.png",
+      "selectedIconPath": "icons/index_after.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "购物车",
+      "iconPath": "icons/cart_before.png",
+      "selectedIconPath": "icons/cart_after.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "icons/user_before.png",
+      "selectedIconPath": "icons/user_after.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

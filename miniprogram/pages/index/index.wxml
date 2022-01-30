@@ -1,0 +1,30 @@
+<swiper autoplay interval="5000" circular indicator-dots="true">
+<swiper-item><image mode="widthFix" src="cloud://test1-2g8upk0z6f117c66.7465-test1-2g8upk0z6f117c66-1305553535/微信截图_20211010233658.png" /></swiper-item>
+<swiper-item><image mode="widthFix" src="cloud://test1-2g8upk0z6f117c66.7465-test1-2g8upk0z6f117c66-1305553535/微信截图_20211010233658.png" /></swiper-item>
+<swiper-item><image mode="widthFix" src="cloud://test1-2g8upk0z6f117c66.7465-test1-2g8upk0z6f117c66-1305553535/微信截图_20211010233658.png" /></swiper-item>
+</swiper>
+<view class="search_row">
+  <input placeholder="请输入您要搜索的商品" bindinput="handleInput"></input>
+</view>
+<view class="search_content">
+  <navigator class="search_item" wx:for="{{search_goods}}" wx:key="_id" url="/pages/detail/detail?_id={{item._id}}">{{item.good_name}}</navigator>
+</view>
+<view class="cates_container">
+  <!-- 左侧菜单-->
+  <scroll-view class="left_menu" scroll-y="true">
+    <view class="menu_item {{index===currentIndex?'active':''}}" wx:for="{{menu_list}}" wx:key="_id" bindtap="handleItemTap" data-index="{{index}}">{{item.name}}</view>
+  </scroll-view>
+  <scroll-view class="right_content" scroll-y="true" >
+    <view class="goods_tab">
+      <navigator class="goods_item" wx:for="{{goods_list}}" wx:key="_id" url="/pages/detail/detail?_id={{item._id}}">
+        <view class="goods_img_wrap">
+          <image mode="widthFix" src="{{item.good_image}}"></image>
+        </view>
+        <view class="goods_info_wrap">
+          <view class="goods_name">{{item.good_name}}</view>
+          <view class="goods_price">￥{{item.good_price}}/{{item.unit}}</view>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>

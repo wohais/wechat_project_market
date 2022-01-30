@@ -1,0 +1,185 @@
+/* pages/pay_money_b/pay_money_b.wxss */
+page{
+  background-color: #dbdbdb;
+}
+.address_tab{
+  background-color: white;
+  border-radius: 30rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row
+}
+.address_tab .address_img{
+  width: 150rpx;
+  height: 150rpx;
+  left: 30rpx;
+  padding: 20rpx;
+}
+.address_tab .address_img image{
+  width: 100%;
+  height: 100%;
+}
+.address_tab .address_choosen{
+  color: red;
+  font-size: 50rpx;
+  padding-left: 50rpx;
+  padding-top: 70rpx;
+}
+.address_tab .address_show{
+  padding: 20rpx;
+}
+.address_tab .address_show .user_name{
+  font-size: 30rpx;
+  font-weight: 800;
+  padding-bottom: 10rpx;
+}
+.address_tab .address_show .user_telnumber{
+  font-size: 28rpx;
+  font-weight: 600;
+  padding-bottom: 10rpx;
+}
+.address_tab .address_show .user_address{
+  font-size: 28rpx;
+  font-weight: 600;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.goods_tab{
+  margin-top: 15rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+.goods_tab .goods_item{
+  display: flex;
+  padding: 20rpx;
+  height: 180rpx;
+}
+.goods_tab .goods_item .goods_img_wrap{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_tab .goods_item .goods_img_wrap image{
+  width: 60%;
+}
+.goods_tab .goods_item .goods_info_wrap{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_tab .goods_item .goods_info_wrap .goods_name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: black;
+  font-weight: 800;
+  padding-top: 10rpx;
+  font-size: 35rpx;
+}
+.goods_tab .goods_item .goods_info_wrap .goods_price{
+  color: #bfbfbf;
+  font-size: 30rpx;
+}
+.goods_tab .goods_item .goods_info_wrap .goods_num{
+  color: #bfbfbf;
+  font-size: 25rpx;
+}
+.line{
+  width: 95%;
+  height: 2rpx;
+  display: inline-block;
+  position: absolute;
+  margin: -20rpx 0rpx 5rpx 0rpx;
+  background-color: #dedede;
+  text-align: center;
+}
+.line_2{
+  width: 100%;
+  height: 2rpx;
+  display: inline-block;
+  position: absolute;
+  margin: 0rpx 0rpx 5rpx 0rpx;
+  background-color: #dedede;
+  text-align: center;
+}
+.goods_tab .conts{
+  display: flex;
+  flex-direction: row;
+  padding:10rpx;
+}
+.goods_tab .conts .talk{
+  flex: 3;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+}
+.goods_tab .conts .areas{
+  flex: 11;
+  padding-top: 20rpx;
+  height: 60rpx;
+}
+
+.order_pay{
+  margin-top: 15rpx;
+  background-color: white;
+  border-radius: 30rpx;
+  margin-bottom: 100rpx;
+}
+.order_pay .goods_pay{
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+}
+.order_pay .goods_freight{
+  padding-top: 10rpx;
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+}
+.order_pay .total_num{
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.order_pay .total_num .money{
+  padding-left: 400rpx;
+  color: red;
+}
+
+.footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.footer_tool .total_price_wrap {
+  flex: 4;
+  text-align: center;
+  padding: 20rpx;
+}
+.footer_tool .total_price_wrap .total_price {
+  color: red;
+  font-size: 34rpx;
+}
+.footer_tool .already_eat_wrap {
+  flex: 3;
+  background-color:red;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

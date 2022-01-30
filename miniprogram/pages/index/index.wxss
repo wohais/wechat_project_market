@@ -1,0 +1,115 @@
+/* miniprogram/pages/index/index.wxss */
+swiper {
+  width: 100%;
+  height: calc(100vw *352 / 1125);
+}
+swiper image {
+  width: 100%;
+  border-radius: 60rpx;
+}
+page {
+  height: 100%;
+  background-color: #ffffff;
+}
+.search_row {
+  height: 70rpx;
+  display: flex;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 30rpx;
+  
+}
+.search_row input {
+  background-color: #e6e6e6;
+  flex: 4;
+  height: 100%;
+  padding-left: 30rpx;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.search_content {
+  margin-top: 5rpx;
+  width: 94%;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  padding-top: 0rpx;
+  padding-bottom: 20rpx;
+  position: absolute;
+  z-index: 2;
+
+}
+.search_content .search_item {
+  background-color: #fff;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  border-left: 1rpx solid #ccc;
+  border-right: 1rpx solid #ccc;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;  
+}
+.cates_container{
+  height: calc(100% - 360rpx);
+  display:flex;
+  padding-top: 20rpx;
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  border-radius: 30%;
+  position: relative;
+  z-index: 1;
+}
+.cates_container .left_menu{
+  flex: 2;
+  border-radius: 20rpx;
+}
+.cates_container .left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cates_container .left_menu .active{
+  color: red;
+  border-left: 5rpx solid currentColor;
+}
+.cates_container .right_content{
+  flex: 5;
+  background-color: white;
+  border-radius: 20rpx;  
+}
+.goods_tab .goods_item {
+  display: flex;
+  border: 2rpx solid #e6e6e6;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  height: 150rpx;
+}
+.goods_tab .goods_item .goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_tab .goods_item .goods_img_wrap image {
+  width: 80%;
+}
+.goods_tab .goods_item .goods_info_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goods_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.goods_tab .goods_item .goods_info_wrap .goods_price {
+  color: red;
+  font-size: 32rpx;
+}

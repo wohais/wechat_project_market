@@ -1,0 +1,81 @@
+/* pages/collection/collection.wxss */
+.collection_content .collection_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: red;
+  border-bottom: 1rpx solid currentColor;
+  border-top: 1rpx solid currentColor;
+}
+.collection_content .collection_main .collection_item {
+  display: flex;
+  padding: 10rpx ;
+  border-bottom: 5rpx solid #ccc;
+}
+.collection_content .collection_main .collection_chk_wrap {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection_content .collection_main .collection_image_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection_content .collection_main .collection_image_wrap image {
+  width: 80%;
+}
+.collection_content .collection_main .collection_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collection_content .collection_main .collection_info_wrap .good_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: black;
+}
+.collection_content .collection_main .collection_info_wrap .good_price {
+  justify-content: space-around;
+  color: red;
+  font-size: 34rpx;
+}
+.footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.footer_tool .all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool .total_price_wrap {
+  flex: 4;
+  text-align: right;
+  padding: 20rpx;
+}
+.footer_tool .total_price_wrap .total_price {
+  color: red;
+  font-size: 34rpx;
+}
+.footer_tool .already_eat_wrap {
+  flex: 3;
+  background-color:red;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

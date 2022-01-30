@@ -1,0 +1,141 @@
+/* pages/cart/cart.wxss */
+/* pages/cart/cart.wxss */
+page {
+  padding-bottom: 90rpx;
+}
+.cart_content .cart_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: red;
+  border-bottom: 1rpx solid currentColor;
+  border-top: 1rpx solid currentColor;
+}
+.cart_content .administer{
+  float: right;
+  padding-right: 5rpx;
+}
+.cart_content .cart_main .cart_item {
+  display: flex;
+  padding: 10rpx ;
+  border-bottom: 5rpx solid #ccc;
+}
+.cart_content .cart_main .cart_chk_wrap {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_image_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_content .cart_main .cart_image_wrap image {
+  width: 80%;
+}
+.cart_content .cart_main .cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_content .cart_main .cart_info_wrap .good_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: black;
+}
+.cart_content .cart_main .cart_info_wrap .good_price {
+  justify-content: space-around;
+  color: red;
+  font-size: 34rpx;
+}
+.cart_content .cart_main .row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:20rpx;
+}
+.cart_content .cart_main .row .quantity-position{
+  position: absolute;
+  margin-top:5px;
+  right:50rpx;
+}
+ 
+ 
+ 
+/*数量加减样式*/
+/*主容器*/  
+.stepper {  
+  width: 80px;  
+  height: 26px;  
+  /*给主容器设一个边框*/  
+  border: 1px solid #ccc;  
+  border-radius: 3px;  
+  margin:0 auto;  
+}  
+
+/*加号和减号*/  
+.stepper text {  
+  width: 19px;  
+  line-height: 26px;  
+  text-align: center;  
+  float: left;  
+}  
+
+/*数值*/  
+.stepper input {  
+padding:0px;
+  width: 40px;  
+  height: 26px;  
+  float: left;  
+  margin: 0 auto;  
+  text-align: center;  
+  font-size: 12px;  
+  /*给中间的input设置左右边框即可*/  
+  border-left: 1px solid #ccc;  
+  border-right: 1px solid #ccc;  
+}  
+
+/*普通样式*/  
+.stepper .normal{  
+  color: black;  
+}
+
+.footer_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+}
+.footer_tool .all_chk_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool .total_price_wrap {
+  flex: 4;
+  text-align: right;
+  padding: 20rpx;
+}
+.footer_tool .total_price_wrap .total_price {
+  color: red;
+  font-size: 34rpx;
+}
+.footer_tool .already_eat_wrap {
+  flex: 3;
+  background-color:red;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

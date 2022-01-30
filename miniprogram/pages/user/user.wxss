@@ -1,0 +1,99 @@
+/* pages/user/user.wxss */
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 250rpx;
+  overflow: hidden;
+  background-color:#edece8;
+  position: relative;
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_wel{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
+  color: black;
+  font-size: 38rpx;
+  font-weight: 900;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.user_info_wrap .be_user{
+  position: absolute;
+  width:150rpx;
+  height:150rpx;
+  background:#fff;
+  border:1px solid #f5f5f5;
+  z-index: 12;
+  top: 30rpx;
+  left: 40rpx;
+  padding:21rpx;
+  border-radius: 20rpx;
+}
+.user_info_wrap .be_user image{
+  width:100%;
+  height:100%;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 46vh;
+  width: 100%;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 30%;
+  border: 1rpx solid black;
+  color: black;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.user_content {
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40rpx;
+}
+.user_content .collection_wrap {
+  margin-top: 10rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.user_content .order_wrap{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  background-color: #fff;
+}
+.user_content .app_info_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user_content .app_info_wrap .app_info_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}

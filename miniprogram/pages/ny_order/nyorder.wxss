@@ -1,0 +1,49 @@
+/* pages/ny_order/nyorder.wxss */
+page{
+  background-color: #dbdbdb;
+}
+.order_content{
+  background-color: white;
+}
+.order_content .order_title {
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: red;
+  border-bottom: 1rpx solid currentColor;
+  border-top: 1rpx solid currentColor;
+}
+.order_tab{
+  margin: 15rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.order_tab .order_id{
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.order_tab .order_sum{
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.order_tab .order_time{
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.order_tab .order_status{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding-bottom: 20rpx;
+}
+.order_tab .order_status .status_txt{
+  color: red;
+}

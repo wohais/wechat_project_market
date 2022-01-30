@@ -1,0 +1,23 @@
+<!--pages/user/user.wxml-->
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.data.avatarUrl}}">
+    <view> 
+      <image class="be_user" src="{{userinfo.data.avatarUrl}}"></image>
+      <view class="user_wel">欢迎！{{userinfo.data.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <image class="be_user" src="/icons/login_img.png" mode="widthFix"></image>
+    <navigator class="user_btn" url="/pages/login/login">点此登录</navigator>
+  </view>
+</view>
+<view class="user_content">
+  <navigator class="collection_wrap" url="/pages/collection/collection">收藏夹</navigator>
+  <navigator class="order_wrap" url="/pages/all_order/all_order">全部订单</navigator>
+  <navigator class="order_wrap" url="/pages/ny_order/nyorder">待配送订单</navigator>
+  <navigator class="order_wrap" url="/pages/sending_order/sending_order">待收货订单</navigator>
+  <view class="app_info_wrap">
+    <view class="app_info_item">意见反馈</view>
+    <view class="app_info_item">关于我们</view>
+  </view>
+</view>
